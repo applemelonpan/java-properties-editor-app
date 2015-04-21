@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Flavor Picker: Chrome Platform Analytics sample app (for vanilla Javascript)</title>
+    <style type="text/css">
+      h1 {
+        margin-bottom: 0;
+      }
+      .description {
+        color: red;
+      }
+      .section {
+        margin-top: 1.5em;
+      }
+      .label {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flavor Picker</h1>
+    <div class="description">Chrome Platform Analytics sample app (for vanilla Javascript)</div>
+
+    <div class='section'>
+      <h3>Pick a flavor!</h3>
+      <button id="chocolate">Chocolate</button>
+      <button id="vanilla">Vanilla</button>
+    </div>
+
+    <div class='section'>
+      <h3>Choices</h3>
+      <div>
+        <span class='label'>Current:</span>
+        <span id=currentChoice>None</span>
+      </div>
+      <div>
+        <span class='label'>Previous:</span>
+        <span id=previousChoice>None</span>
+      </div>
+    </div>
+
+    <div class='section'>
+      <h3>Settings</h3>
+      <div id="settings-loading">
+        Loading settings...
+      </div>
+      <div id="settings-loaded" hidden>
+        <label>
+          <input id="tracking-permitted" type="checkbox" />
+          Send anonymous usage data.
+        </label>
+      </div>
+    </div>
+    <script src="google-analytics-bundle.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
