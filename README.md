@@ -1,6 +1,7 @@
-# Java properties Editor Chrome App
+# Java properties Editor for Chrome App
 
-Just a jva properties editor for ChromeOS and Chrome.
+Just a java properties editor for ChromeOS and Chrome.
+This editor convert national language characters to plain ASCII text.
 
 ## Running the development version
 
